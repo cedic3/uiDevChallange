@@ -1,0 +1,6 @@
+<form [formGroup]="inputSection">
+  <label>
+    Land:
+    <input type="text" formControlName="country" [(ngModel)]="searchValue" (ngModelChange)="print()">
+  </label>
+</form>
