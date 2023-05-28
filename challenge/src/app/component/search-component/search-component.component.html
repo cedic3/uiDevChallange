@@ -1,6 +1,15 @@
-<form [formGroup]="inputSection">
-  <label>
+<form [formGroup]="inputSection" (ngSubmit)="openPicture()">
+  <label class="label">
     Land:
-    <input type="text" formControlName="country" [(ngModel)]="searchValue" (ngModelChange)="print()">
+    <input class="input" type="text" formControlName="country" [(ngModel)]="searchValue" (ngModelChange)="changeList()">
   </label>
+  <br/>
+  <label class="label">
+    Resultatliste:
+    <select class="input dropdown" formControlName="selectedBeer" [(ngModel)]="selectedBeer">
+      <option *ngFor="let beer of beersInSearchField" [value]="beer.id" [selected]="beer.id==selectedBeer">{{ beer.name }}</option>
+    </select>
+  </label>
+  <br/>
+  <button class="button" role="button" type="submit">Bild anzeigen</button>
 </form>

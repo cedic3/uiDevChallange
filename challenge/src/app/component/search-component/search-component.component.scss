@@ -1,0 +1,42 @@
+.input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+  margin: 1vh;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+select option:checked {
+  background-color: grey;
+  box-shadow: 0 0 10px 100px #000 inset;
+}
+
+.button {
+  background: #f2f2f2;
+  border: 1px solid #DFDFDF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 20vw;
+  padding: 14px 22px;
+  margin-top: 2vh;
+}
+
+.button:hover {
+  background-color: darkgray;
+}
+
+
